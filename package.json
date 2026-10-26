@@ -1,0 +1,23 @@
+{
+  "name": "directus-astro",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Read-only Directus client for multi-tenant Astro blogs.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "dependencies": {
+    "@directus/sdk": "^16.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
